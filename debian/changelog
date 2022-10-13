@@ -1,0 +1,59 @@
+node-follow-redirects (1.14.5-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + node-follow-redirects: Drop versioned constraint on node-debug in
+    Depends
+
+  [ Yadd ]
+  * Update standards version to 4.6.0, no changes needed
+  * Fix GitHub tags regex
+  * Fix filenamemangle
+  * New upstream version 1.14.5
+
+ -- Yadd <yadd@debian.org>  Sun, 07 Nov 2021 18:07:59 +0100
+
+node-follow-redirects (1.13.1-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.5.1
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs
+  * New upstream version 1.13.1
+  * Enable upstream test using mocha
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 15 Dec 2020 12:16:12 +0100
+
+node-follow-redirects (1.13.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from deprecated 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * New upstream version 1.13.0
+  * Use pkg-js-tools auto install
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 27 Aug 2020 22:46:08 +0200
+
+node-follow-redirects (1.2.4-1) unstable; urgency=low
+
+  * Initial release (Closes: #876032)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 17 Sep 2017 21:50:18 +0530
