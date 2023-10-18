@@ -2,6 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: follow-redirects
 Upstream-Contact: https://github.com/olalonde/follow-redirects/issues
 Source: https://github.com/olalonde/follow-redirects
+ https://registry.npmjs.org/@types/follow-redirects
 
 Files: *
 Copyright: 2014-present Olivier Lalonde <olalonde@gmail.com>
@@ -12,6 +13,10 @@ License: Expat
 Files: debian/*
 Copyright: 2017 Pirate Praveen <praveen@debian.org>
  2020 Yadd <yadd@debian.org>
+License: Expat
+
+Files: types-*/*
+Copyright: Microsoft Corporation
 License: Expat
 
 License: Expat

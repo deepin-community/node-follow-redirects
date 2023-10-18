@@ -1,0 +1,22 @@
+Description: fix for recent url-parse
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1009582
+Forwarded: no
+Last-Update: 2022-04-13
+
+--- a/test/test.js
++++ b/test/test.js
+@@ -819,11 +819,11 @@
+ 
+             assert.equal(redirects[0].url, "http://localhost:3600/a");
+             assert.equal(redirects[0].statusCode, 302);
+-            assert.equal(redirects[0].headers["content-type"], "text/plain; charset=utf-8");
++            assert.equal(redirects[0].headers["content-type"], "text/plain");
+ 
+             assert.equal(redirects[1].url, "http://localhost:3600/b");
+             assert.equal(redirects[1].statusCode, 302);
+-            assert.equal(redirects[1].headers["content-type"], "text/plain; charset=utf-8");
++            assert.equal(redirects[1].headers["content-type"], "text/plain");
+ 
+             assert.equal(redirects[2].url, "http://localhost:3600/c");
+             assert.equal(redirects[2].statusCode, 200);
