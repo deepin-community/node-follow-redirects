@@ -1,0 +1,16 @@
+Description: replace lolex by @sinonjs/faketimers
+Author: Yadd <yadd@debian.org>
+Forwarded: no
+Last-Update: 2022-05-03
+
+--- a/test/test.js
++++ b/test/test.js
+@@ -8,7 +8,7 @@
+ var https = followRedirects.https;
+ var fs = require("fs");
+ var path = require("path");
+-var lolex = require("lolex");
++var lolex = require("@sinonjs/fake-timers");
+ 
+ var util = require("./util");
+ var concat = require("concat-stream");

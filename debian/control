@@ -8,8 +8,8 @@ Build-Depends: debhelper-compat (= 13)
  , mocha <!nocheck>
  , node-concat-stream <!nocheck>
  , node-express <!nocheck>
- , node-lolex <!nocheck>
-Standards-Version: 4.6.0
+ , node-sinon <!nocheck>
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-follow-redirects
 Vcs-Git: https://salsa.debian.org/js-team/node-follow-redirects.git
 Homepage: https://github.com/olalonde/follow-redirects
@@ -20,6 +20,8 @@ Package: node-follow-redirects
 Architecture: all
 Depends: ${misc:Depends}
  , node-debug
+Provides: ${nodejs:Provides}
+Multi-Arch: foreign
 Description: HTTP and HTTPS modules that follow redirects
  Drop-in replacement for Nodes `http` and `https` that automatically follows
  redirects.
