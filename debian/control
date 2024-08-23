@@ -9,7 +9,7 @@ Build-Depends: debhelper-compat (= 13)
  , node-concat-stream <!nocheck>
  , node-express <!nocheck>
  , node-sinon <!nocheck>
-Standards-Version: 4.6.2
+Standards-Version: 4.7.0
 Vcs-Browser: https://salsa.debian.org/js-team/node-follow-redirects
 Vcs-Git: https://salsa.debian.org/js-team/node-follow-redirects.git
 Homepage: https://github.com/olalonde/follow-redirects

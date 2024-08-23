@@ -1,0 +1,37 @@
+Description: res.end() does not immediately close connection
+ In node 20, the server is not considered closed until client connections times out
+ after some time.
+ .
+ Thanks to Jérémy Lal <kapouer@melix.org>
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1072763
+Forwarded: no
+Last-Update: 2024-06-10
+
+--- a/test/test.js
++++ b/test/test.js
+@@ -602,24 +602,6 @@
+         }));
+     });
+ 
+-    it("destroys the socket after configured inactivity period", function () {
+-      app.get("/data", delay(clock, 3000, sendsJson({ took: "toolongtosenddata" })));
+-
+-      return server.start(app)
+-        .then(asPromise(function (resolve, reject) {
+-          var req = http.get("http://localhost:3600/data", concatJson(reject, reject));
+-          req.on("error", reject);
+-          req.setTimeout(100, function () {
+-            throw new Error("should not have timed out");
+-          });
+-          req.on("socket", function () {
+-            req.socket.on("timeout", function () {
+-              resolve();
+-            });
+-          });
+-        }));
+-    });
+-
+     it("should timeout on the final request", function () {
+       app.get("/redirect1", redirectsTo("/redirect2"));
+       app.get("/redirect2", redirectsTo("/timeout"));

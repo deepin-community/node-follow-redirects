@@ -1,24 +1,24 @@
 {
     "name": "@types/follow-redirects",
-    "version": "1.14.2",
+    "version": "1.14.4",
     "description": "TypeScript definitions for follow-redirects",
     "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/follow-redirects",
     "license": "MIT",
     "contributors": [
         {
             "name": "Emily Klassen",
-            "url": "https://github.com/forivall",
-            "githubUsername": "forivall"
+            "githubUsername": "forivall",
+            "url": "https://github.com/forivall"
         },
         {
             "name": "Claas Ahlrichs",
-            "url": "https://github.com/claasahl",
-            "githubUsername": "claasahl"
+            "githubUsername": "claasahl",
+            "url": "https://github.com/claasahl"
         },
         {
             "name": "Piotr Błażejewicz",
-            "url": "https://github.com/peterblazejewicz",
-            "githubUsername": "peterblazejewicz"
+            "githubUsername": "peterblazejewicz",
+            "url": "https://github.com/peterblazejewicz"
         }
     ],
     "main": "",
@@ -32,6 +32,6 @@
     "dependencies": {
         "@types/node": "*"
     },
-    "typesPublisherContentHash": "e519bd8d72d7bfbe422cacf9ddd7cac5cca45ef4e2d22228bf63781ef873dc2b",
+    "typesPublisherContentHash": "aae4331775f0d12b6291656304a64b4fc56d23a148d8ded8decf38cc252a2a2e",
     "typeScriptVersion": "4.5"
 }
