@@ -6,7 +6,7 @@ Last-Update: 2022-04-13
 
 --- a/test/test.js
 +++ b/test/test.js
-@@ -819,11 +819,11 @@
+@@ -985,11 +985,11 @@
  
              assert.equal(redirects[0].url, "http://localhost:3600/a");
              assert.equal(redirects[0].statusCode, 302);

@@ -1,3 +1,4 @@
 fix-test.patch
 fix-for-recent-url-parse.patch
 replace-lolex-by-sinonjs-faketimers.patch
+fix-test-for-node-20.patch

@@ -1,3 +1,21 @@
+node-follow-redirects (1.15.6+~1.14.4-2) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.7.0
+  * Fix test for nodejs 20 (Closes: #1072763)
+
+ -- Yadd <yadd@debian.org>  Mon, 10 Jun 2024 07:10:49 +0400
+
+node-follow-redirects (1.15.6+~1.14.4-1) unstable; urgency=medium
+
+  * Team upload
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository-Browse,
+    Security-Contact
+  * New upstream version (Closes: #1059926, #1066971)
+  * Unfuzz patches
+
+ -- Yadd <yadd@debian.org>  Sun, 17 Mar 2024 07:25:36 +0400
+
 node-follow-redirects (1.15.3+~1.14.2-1) unstable; urgency=medium
 
   * Team upload

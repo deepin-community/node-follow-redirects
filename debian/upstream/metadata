@@ -1,4 +1,5 @@
-Bug-Database: https://github.com/olalonde/follow-redirects/issues
-Bug-Submit: https://github.com/olalonde/follow-redirects/issues/new
+Bug-Database: https://github.com/follow-redirects/follow-redirects/issues
+Bug-Submit: https://github.com/follow-redirects/follow-redirects/issues/new
 Repository: https://github.com/olalonde/follow-redirects.git
-Repository-Browse: https://github.com/olalonde/follow-redirects
+Repository-Browse: https://github.com/follow-redirects/follow-redirects
+Security-Contact: https://github.com/olalonde/follow-redirects/tree/HEAD/SECURITY.md
